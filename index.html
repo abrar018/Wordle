@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Wordle</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="top">
+      <div class="left"></div>
+      <div class="centre" style="text-align: center">WORDLE</div>
+      <div class="right">
+        <div>
+        <button class="rules">&#9432</button>
+        <ul class="menu" style="text-align:left">
+          <p>How To Play</p>
+          <li>Start typing. The letters will appear in the boxes</li>
+          <li>Remove letters with Backspace</li>
+          <li>Hit Enter/Return to submit an answer</li>
+          <li>Letters with green background are in the right spot</li>
+          <li>Letters with yellow background exist in the word, but are in the wrong spots</li>
+          <li>Letters with gray background do not exist in the word</li>
+          <li>If you need a hint, click the ? icon</li>
+        </ul>
+      </div>
+        <button class="hintbutton">?</button>
+        <button class="theme">&#9681</button>
+      </div>
+    </nav>
+    <middle>
+      <div id="game">
+      </div>
+      
+      
+    </middle>
+    <start><button class="refresh" onClick="window.location.reload()">Start Over</button></start>
+    <lost class="lost"></lost>
+    
+    <div class="footer" style="text-align:center">
+      <hint class="hint"><i>Hint:</i></hint>
+      <a>&#169 Abrar Rehan</a>
+    </div>
+    <script src="./wordle.js" type="module"></script>
+  </body>
+</html>

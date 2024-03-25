@@ -1,0 +1,175 @@
+html {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--light);
+  transition: background-color 0.3s ease-in-out;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--light);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.dark {
+  background-color: var(--dark);
+  color:var(--light);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 5px solid grey;
+}
+
+.centre {
+  flex:1;
+  font-size: 50px;
+}
+.left{
+  flex:1;
+}
+.right{
+  display: flex;
+  flex-direction: row;
+  flex:1;
+  justify-content:right;
+}
+
+button{
+  display:flex;
+  justify-content: center;
+  margin: 5px;
+  padding: 10px
+
+}
+
+:root {
+  --light: white;
+  --dark: #121213;
+  --empty: #3a3a3c;
+  --wrong: #b59f3b;
+  --right: #538d4e;
+}
+
+#game {
+  display: flex;
+  flex:1;
+  justify-content: center;
+  align-items: start;
+  margin-top: 5rem;
+  width: 100%;
+  height: 600px;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: repeat(5, auto);
+  grid-template-columns: repeat(4, auto);
+}
+
+.box {
+  width: 60px;
+  height: 60px;
+  border: 2px solid var(--empty);
+  margin: 4px;
+  background-color: white;
+  color: #121213;
+  text-transform: uppercase;
+  display: grid;
+  place-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.4rem;
+}
+
+.box.empty {
+  background: var(--empty);
+}
+
+.box.wrong {
+  background: var(--wrong);
+}
+
+.box.correct {
+  background: var(--right);
+}
+
+.refresh{
+  /* make it bigger */
+  width: 200px;
+  height: 50px;
+  align-items: center;
+  /* text size biggere */
+  font-size: 22px;
+  justify-content: center;
+  background-color: rgb(92, 212, 92);
+  border-radius: 5px;
+  border: none;
+  color: white;
+}
+start{
+  display: flex;
+  justify-content: center;
+}
+
+.click {
+  padding: 16px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 18px;
+
+}
+.menu{
+  display: flex;
+  flex: 1;
+  position: absolute;
+  border-radius: 4px;
+  display: none;
+}
+.menu__item {
+  padding: 36px;
+  text-align: center;
+  border-bottom: 1px solid #222;
+}
+
+.showmenu {
+  display: block;
+}
+
+.hint{
+  display:none;
+}
+.show{
+  display:block;
+}
+
+.islost{
+  display:block;
+}
+
+middle{
+  display: flex;
+  flex-direction: column;
+  justify-content: centre;
+}
+
+
+.theme,.hintbutton,.rules{
+  border-radius: 25%;
+  font-size: 25px;
+  border:none;
+  width:40px;
+}
+
+lost{
+  text-align: center;
+  padding: 15px;
+  background-color: red;
+  color: white;
+  display: none;
+}
